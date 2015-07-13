@@ -1,6 +1,6 @@
 'use strict';
 
-var rewire = require("rewire");
+var rewire = require('rewire');
 var runner = rewire('../');
 
 var chai = require('chai');
