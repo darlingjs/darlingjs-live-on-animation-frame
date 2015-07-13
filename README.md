@@ -1,4 +1,4 @@
-# darlingjs-live-on-animation-frame [![npm version](https://badge.fury.io/js/darlingjs-live-on-animation-frame.svg)](http://badge.fury.io/js/darlingjs-live-on-animation-frame)
+# darlingjs-live-on-animation-frame [![npm version](https://badge.fury.io/js/darlingjs-live-on-animation-frame.svg)](http://badge.fury.io/js/darlingjs-live-on-animation-frame) [![Build Status](https://travis-ci.org/darlingjs/darlingjs-live-on-animation-frame.svg?branch=master)](https://travis-ci.org/darlingjs/darlingjs-live-on-animation-frame)
 update pipeline on animation frame
 
 [Change Log](https://github.com/darlingjs/darlingjs-live-on-animation-frame/blob/master/CHANGELOG.md)
