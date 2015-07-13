@@ -1,16 +1,57 @@
-var raf = require('raf')
+/**
+ * live runner for darlingjs (http://darlingjs.github.io)
+ *
+ * it updates world of darlingjs on each animation frame
+ *
+ * @type {exports}
+ */
+
+'use strict';
+
+var raf = require('raf');
 
 module.exports = function(ops) {
+  ops = ops || {};
   return function(step){
-    return {
+    var api = {
+      /**
+       * start runner
+       *
+       * @returns {api}
+       */
       start: function() {
+        if (this.playing) {
+          return this;
+        }
+
         this.playing = true;
-        //TODO: implement
+        raf(function tick() {
+          step();
+          raf(tick);
+        });
+
+        return this;
       },
+      /**
+       * stop runner
+       *
+       * @returns {api}
+       */
       stop: function() {
+        if (!this.playing) {
+          return this;
+        }
         this.playing = false;
-        //TODO: implement
+
+        raf.cancel();
+        return this;
       }
     };
+
+    if (ops.autostart) {
+      api.start();
+    }
+
+    return api;
   };
 };
