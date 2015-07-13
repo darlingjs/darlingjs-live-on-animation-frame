@@ -1,3 +1,5 @@
+var raf = require('raf')
+
 module.exports = function(ops) {
   return function(step){
     return {
