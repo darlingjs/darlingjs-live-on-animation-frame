@@ -1,0 +1,25 @@
+{
+  "name": "darlingjs-live-on-animation-frame",
+  "version": "1.0.0",
+  "description": "update world pipeline on animation frame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlingjs/darlingjs-live-on-animation-frame.git"
+  },
+  "keywords": [
+    "darlingjs",
+    "animation",
+    "frame",
+    "animation"
+  ],
+  "author": "Eugene Krevenets <ievgenii.krevenets@gmail.com> (http://hyzhak.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darlingjs/darlingjs-live-on-animation-frame/issues"
+  },
+  "homepage": "https://github.com/darlingjs/darlingjs-live-on-animation-frame#readme"
+}
