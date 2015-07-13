@@ -21,3 +21,9 @@ and [Changelogs convention](https://github.com/tech-angels/vandamme/#changelogs-
 
 ## [Unreleased][unreleased]
 v1.0.0
+
+## [1.0.1] - 2015.07.15
+- [#1](https://github.com/darlingjs/darlingjs-live-on-animation-frame/issues/1) add start/stop for running live update of the world on animation frame
+
+[unreleased]: https://github.com/darlingjs/darlingjs/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/darlingjs/darlingjs/compare/0.0.0...v1.0.1
