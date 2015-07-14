@@ -24,9 +24,13 @@ module.exports = function(ops) {
           return this;
         }
 
+        var timeBefore = Date.now();
+
         this.playing = true;
         raf(function tick() {
-          step();
+          var timeNow = Date.now();
+          step(timeNow - timeBefore);
+          timeBefore = timeNow;
           raf(tick);
         });
 
